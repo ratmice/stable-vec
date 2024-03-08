@@ -166,6 +166,7 @@ macro_rules! gen_tests_for {
 
             assert!(sv.capacity() >= 3);
             assert_sv_eq!(sv, []: String);
+            assert_eq!(sv.get(0), None);
         }
 
         #[test]
